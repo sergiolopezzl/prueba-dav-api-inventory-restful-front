@@ -1,0 +1,35 @@
+/* Contenedor del botón, posicionado en la esquina inferior derecha */
+.logoutContainer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+  }
+  
+  /* Estilo del botón de logout */
+  .logoutButton {
+    background-color: #e74c3c; /* Rojo base */
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease; /* Suaviza las transiciones */
+  }
+  
+  /* Efecto hover: Cambia a un tono más claro */
+  .logoutButton:hover {
+    background-color: #ff6f61; /* Tono más claro */
+    color: #fff5f5; /* Ligero cambio en el texto para diferenciar */
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05); /* Un ligero aumento en tamaño */
+  }
+  
+  /* Efecto de clic */
+  .logoutButton:active {
+    transform: scale(0.95);
+  }
+  
