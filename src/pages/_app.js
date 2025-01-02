@@ -1,4 +1,3 @@
-// src/pages/_app.js
 import { AuthProvider } from '@context/AuthContext'; // Importamos el AuthProvider
 
 function MyApp({ Component, pageProps }) {

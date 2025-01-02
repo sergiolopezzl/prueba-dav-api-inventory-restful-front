@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router'; // Importamos useRouter para manejar la redirección
 import styles from '@styles/Login.module.css'; // Importamos el archivo de estilos
+import Logout from '@common/Logout';
 
 const Register = () => {
   const [username, setUsername] = useState('');
@@ -82,6 +83,7 @@ const Register = () => {
         </form>
         {error && <p className={styles.error}>{error}</p>}
       </div>
+      <Logout /> {/* Componente de logout */}
     </div>
   );
 };
